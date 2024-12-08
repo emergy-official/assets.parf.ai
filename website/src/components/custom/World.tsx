@@ -3,9 +3,9 @@ import { navigate } from 'astro:transitions/client';
 import ProcessRequest from './ProcessRequest';
 import { scene, draggableObjects } from '~/stores/stores';
 import * as THREE from 'three';
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { DragControls } from 'three/examples/jsm/controls/DragControls';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { DragControls } from 'three/examples/jsm/controls/DragControls.js';
 import { useStore } from '@nanostores/react';
 
 const addNewObject = (path: string, index: number, scene: THREE.Scene) => {
