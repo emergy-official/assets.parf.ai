@@ -1,4 +1,4 @@
-# Anomaly.parf.ai
+# assets.parf.ai
 
 ![](website/src/assets/images/default.png)
 
@@ -6,8 +6,8 @@
 
 This project is a full demo featuring Anomaly Detection models on cookies from developing the notebooks to the web app deployment.
 
-- **PROD**: https://anomaly.parf.ai/
-- **DEV**: https://dev.anomaly.parf.ai/
+- **PROD**: https://assets.parf.ai/
+- **DEV**: https://dev.assets.parf.ai/
 
 **MAIN FEATURES**
 
@@ -30,5 +30,5 @@ This project is a full demo featuring Anomaly Detection models on cookies from d
 
 - Deploy the website after a git push **IF** the commit message contains the text: "deploy:website" within the commit message
 
-    - branch dev to deploy to dev.anomaly.parf.ai
-    - branch prod to deploy to anomaly.parf.ai
+    - branch dev to deploy to dev.assets.parf.ai
+    - branch prod to deploy to assets.parf.ai

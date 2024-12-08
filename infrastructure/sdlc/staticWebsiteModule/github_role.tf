@@ -11,7 +11,7 @@ resource "aws_iam_role_policy" "update_lambda_policy" {
           "lambda:UpdateFunctionCode"
         ],
         "Resource" : [
-          "${aws_lambda_function.anomaly_api.arn}"
+          "${aws_lambda_function.assets_api.arn}"
         ]
       }
     ]

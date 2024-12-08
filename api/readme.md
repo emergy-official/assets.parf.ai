@@ -1,4 +1,4 @@
-# anomaly.parf.ai - API
+# assets.parf.ai - API
 
 ## Introduction
 
@@ -7,8 +7,8 @@ The role of the API is to send a request to the sagemaker endpoint without expos
 
 ### Endpoints:
 
-- Prod: https://anomaly.parf.ai/api
-- Dev: https://dev.anomaly.parf.ai/api
+- Prod: https://assets.parf.ai/api
+- Dev: https://dev.assets.parf.ai/api
 
 ### API (NodeJS)
 

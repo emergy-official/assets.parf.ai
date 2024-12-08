@@ -1,8 +1,6 @@
-import { atom } from "nanostores";
-export const cameraStream: any = atom(null);
-export const realTimeScore: any = atom({
-    mean: 0, max: 0, classification: "", time: 0
-});
-export const realTimePause: any = atom(false);
-export const dataset: any = atom("cookies_2");
-export const model: any = atom("efficientad");
+import { atom } from 'nanostores';
+import * as THREE from 'three';
+
+export const imagesToProcess: any = atom([]);
+export const draggableObjects: any = atom([]);
+export const scene: any = atom(new THREE.Scene());

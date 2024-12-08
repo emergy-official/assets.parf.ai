@@ -3,7 +3,7 @@ title: 'Terms and Conditions'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: April 23, 2024
+_Last updated_: December 7, 2024
 
 Please read these terms and conditions carefully before using Our Service.
 
@@ -19,12 +19,12 @@ For the purposes of these Terms and Conditions:
 
 - **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 - **Country** refers to: France
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Anomaly.parf.ai.
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to assets.parf.ai.
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - **Service** refers to the Website.
 - **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. 
 - **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
-- **Website** refers to Anomaly.parf.ai, accessible from https://anomaly.parf.ai/
+- **Website** refers to assets.parf.ai, accessible from https://assets.parf.ai/
 - **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
 ## **Acknowledgment**
@@ -107,7 +107,7 @@ By continuing to access or use Our Service after those revisions become effectiv
 
 ### Image Upload for Anomaly Detection
 
-Please ensure that any images you upload to our website are in compliance with our terms and conditions. By uploading an image, you agree to allow Anomaly.parf.ai to utilize the image for anomaly detection and related services. Remember that you must own or have the right to use and share the image, ensuring it does not infringe on any copyrights or personal privacy rights.
+Please ensure that any images you upload to our website are in compliance with our terms and conditions. By uploading an image, you agree to allow assets.parf.ai to utilize the image for anomaly detection and related services. Remember that you must own or have the right to use and share the image, ensuring it does not infringe on any copyrights or personal privacy rights.
 
 Upon successful upload, our system will analyze the image for any anomalies and provide you with the results.
 

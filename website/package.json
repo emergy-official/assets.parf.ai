@@ -26,6 +26,7 @@
     "@nanostores/react": "^0.7.2",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
+    "@types/three": "^0.170.0",
     "ag-grid-community": "^31.2.1",
     "ag-grid-react": "^31.2.1",
     "astro": "^4.6.3",
@@ -38,6 +39,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "recharts": "^2.12.6",
+    "three": "^0.171.0",
     "unpic": "^3.18.0"
   },
   "devDependencies": {

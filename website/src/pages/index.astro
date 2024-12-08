@@ -2,62 +2,46 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import HeroCustom from '~/components/widgets/HeroCustom.astro';
-import Features2Custom from '~/components/widgets/Features2Custom.astro';
-import { getPermalink } from '~/utils/permalinks';
 import Icon from 'node_modules/astro-icon/components/Icon.astro';
+import HomeSearchForm from '~/components/custom/HomeSearchForm';
+import Requests from '~/components/custom/Requests';
+import World from '~/components/custom/World';
 
 const metadata = {
-  title: 'Anomaly.parf.ai — Demo project to detect anomalies in cookies',
+  title: 'assets.parf.ai — Demo project to detect anomalies in cookies',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
   <HeroCustom>
     <Fragment slot="title">
-      <span class="text-[#2a9d8f] highlight">Anomaly Detection</span> model for Cookies <span class="ml-1 inline-block"
-        ><Icon name="tabler:cookie" /></span
+      <span class="text-[#df6d0c] highlight">3D assets generation</span> - demo <span class="ml-1 inline-block"
+        ><Icon name="tabler:cube" /></span
       >
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="sm:inline">
-        Dive in a demo project featuring two AI methods for detecting visual anomalies in cookies.</span
-      >
-    </Fragment>
-
-    <Fragment slot="content">
-      <Features2Custom
-        items={[
-          {
-            title: 'Real-time Inference',
-            description: "Using Edge Impulse FOMO-AD model, try out the visual anomaly inference with your phone's camera.",
-            icon: 'flat-color-icons:selfie',
-            classes: { panel: 'lg:top-5 cursor-pointer' },
-            href: getPermalink('/real-time-inference'),
-          },
-          {
-            title: 'Explore the dataset',
-            description: 'Made out of 600 pictures, three types, homemade to controll the full process.',
-            icon: 'flat-color-icons:template',
-            classes: { panel: 'cursor-pointer' },
-            href: getPermalink('/dataset'),
-          },
-
-          {
-            title: 'Serverless Inference',
-            description:
-              'Using the power of Sagemaker Serverless Inference, running a model on the cloud has never been cheaper!',
-            icon: 'flat-color-icons:add-image',
-            classes: { panel: 'lg:top-5 cursor-pointer' },
-            href: getPermalink('/serverless-inference'),
-          },
-        ]}
-      >
-        <Fragment slot="bg"> </Fragment>
-      </Features2Custom>
+        Mix of <a href="https://stability.ai/" class="underline" target="_blank">Stability.ai</a>, <a
+          href="https://github.com/TencentARC/InstantMesh"
+          class="underline"
+          target="_blank">Instant Mesh</a
+        > using the compute resources from a <a
+          href="https://huggingface.co/spaces/ThomasSimonini/Roblox-3D-Assets-Generator-v1"
+          class="underline"
+          target="_blank">Huggingface.co</a
+        >
+      </span>
+      <div class="max-w-xs sm:max-w-md mx-auto flex flex-col sm:flex-row gap-2">
+        <div class="relative flex-1 flex flex-row">
+          <HomeSearchForm client:load />
+        </div>
+      </div>
     </Fragment>
   </HeroCustom>
+  
+  <Requests client:load/>
+  <World client:load/>
+
 </Layout>

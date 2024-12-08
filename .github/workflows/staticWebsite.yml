@@ -49,8 +49,6 @@ jobs:
   
       - name: Install Node.js module dependencies - website
         run: |
-          npm config set "@fortawesome:registry" https://npm.fontawesome.com/
-          npm config set "//npm.fontawesome.com/:_authToken" ${{ secrets.FONT_AWESOME_TOKEN }}
           cd $WEBSITE_FOLDER && npm install
 
       - name: Prepare AWS

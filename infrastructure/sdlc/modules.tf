@@ -6,6 +6,8 @@ module "staticWebsite" {
   source = "./staticWebsiteModule"
   # Share the workspace variable
   workspace = local.workspace
+  # Share the workspace variable
+  stability_api_key = var.STABILITY_API_KEY
   # Set the domain name used for this module
   domain_name = local.workspace.subProjects.staticWebsite.domainName
   # Send the current user id

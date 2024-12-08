@@ -38,7 +38,7 @@ export ACCOUNT_ID=$DEV_ACCOUNT_ID
 # Login from infra account to dev account
 eval $(aws sts assume-role --profile $INFRA_ACCOUNT_ID --role-arn "arn:aws:iam::"$ACCOUNT_ID":role/c" --role-session-name AWSCLI-Session | jq -r '.Credentials | "export AWS_ACCESS_KEY_ID=\(.AccessKeyId)\nexport AWS_SECRET_ACCESS_KEY=\(.SecretAccessKey)\nexport AWS_SESSION_TOKEN=\(.SessionToken)\n"')
 
-aws s3 cp website/public/datasets "s3://dev.anomaly.parf.ai/datasets" --recursive
-aws s3 cp website/public/datasets "s3://anomaly.parf.ai/datasets" --recursive
+aws s3 cp website/public/datasets "s3://dev.assets.parf.ai/datasets" --recursive
+aws s3 cp website/public/datasets "s3://assets.parf.ai/datasets" --recursive
 
 ```

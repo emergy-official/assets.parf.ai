@@ -1,11 +1,11 @@
 site:
-  name: Anomaly.parf.ai
-  site: 'https://anomaly.parf.ai'
+  name: Assets.parf.ai
+  site: 'https://assets.parf.ai'
   base: '/'
   trailingSlash: false
 
   googleSiteVerificationId: 
-  devAPIURL: "https://dev.anomaly.parf.ai/api" 
+  devAPIURL: "https://dev.assets.parf.ai/api" 
 
 edgeimpulse:
   model_threshold: 5.0
@@ -13,14 +13,14 @@ edgeimpulse:
 # Default SEO metadata
 metadata:
   title:
-    default: Anomaly.parf.ai
-    template: '%s — Anomaly.parf.ai'
+    default: Assets.parf.ai
+    template: '%s — Assets.parf.ai'
   description: "\U0001F680 Explore two AI methods for detecting visual anomalies in cookies."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Anomaly.parf.ai
+    site_name: Assets.parf.ai
     images:
       - url: '~/assets/images/default.png'
         width: 1200
