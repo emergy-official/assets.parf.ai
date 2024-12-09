@@ -12,7 +12,7 @@ import { LoadIcon } from '../ui/icons/LoadIcon';
 
 const generateImage = async (item, items, itemsSet) => {
   try {
-    const startTime = Date.now()
+    const startTime = Date.now();
     const response = await fetch('https://dev.assets.parf.ai/api/generate-image', {
       method: 'POST',
       headers: {
@@ -31,7 +31,7 @@ const generateImage = async (item, items, itemsSet) => {
 };
 const removeBackground = async (item, items, itemsSet) => {
   try {
-    const startTime = Date.now()
+    const startTime = Date.now();
 
     const response = await fetch('https://dev.assets.parf.ai/api/remove-background', {
       method: 'POST',
@@ -52,7 +52,7 @@ const removeBackground = async (item, items, itemsSet) => {
 };
 const createMesh = async (item, items, itemsSet) => {
   try {
-    const startTime = Date.now()
+    const startTime = Date.now();
 
     const response = await fetch('https://dev.assets.parf.ai/api/generate-mesh', {
       method: 'POST',
@@ -146,7 +146,7 @@ export default function ProcessRequest({ item, expand, itemsSet, items }) {
         <div className="flex flex-wrap">
           <div className="flex flex-col items-center w-1/3 p-4">
             <h2 className="text-xl font-semibold">
-              Generating image {item.timeGeneratedImage ? `(${item.timeGeneratedImage} sec)` : ''}
+              Generating image {item.timeGeneratedImage ? `(${item.timeGeneratedImage?.toFixed(2)} sec)` : ''}
             </h2>
             <div className="bg-gray-200 p-5 rounded-lg w-full">
               {!item.generatedImage ? (
@@ -158,7 +158,8 @@ export default function ProcessRequest({ item, expand, itemsSet, items }) {
           </div>
           <div className="flex flex-col items-center w-1/3 p-4">
             <h2 className="text-xl font-semibold">
-              Removing background {item.timeRemoveBackgroundImage ? `(${item.timeRemoveBackgroundImage} sec)` : ''}
+              Removing background{' '}
+              {item.timeRemoveBackgroundImage ? `(${item.timeRemoveBackgroundImage?.toFixed(2)} sec)` : ''}
             </h2>
             <div className="bg-gray-200 p-5 rounded-lg w-full">
               {!item.generatedImage ? <div className="h-40 rounded-md bg-cover bg-center"></div> : ''}
@@ -174,7 +175,7 @@ export default function ProcessRequest({ item, expand, itemsSet, items }) {
           <div className="flex flex-col items-center w-1/3 p-4">
             <h2 className="text-xl font-semibold flex  items-center">
               Creating mesh {item.meshImage && !item.ready ? <>(downloading {<LoadIcon />})</> : ''}
-              {item.timeMeshAndDownload ? `(${item.timeMeshAndDownload} sec)` : ''}
+              {item.timeMeshAndDownload ? `(${item.timeMeshAndDownload?.toFixed(2)} sec)` : ''}
             </h2>
             <div className="bg-gray-200 p-5 rounded-lg w-full">
               {!item.removeBackgroundImage ? <div className="h-40 rounded-md bg-cover bg-center"></div> : ''}

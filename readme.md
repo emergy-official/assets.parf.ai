@@ -1,34 +1,18 @@
 # assets.parf.ai
 
-![](website/src/assets/images/default.png)
+![](demo.gif)
 
 ## INTRODUCTION
 
-This project is a full demo featuring Anomaly Detection models on cookies from developing the notebooks to the web app deployment.
+This project is a demo featuring 3D assets generation for my job application at Electronic Arts to showcase some of my skills and my motivation to join this new team.
 
 - **PROD**: https://assets.parf.ai/
 - **DEV**: https://dev.assets.parf.ai/
 
-**MAIN FEATURES**
+I did it on Saturday December 7th, it uses the api of Stability.ai and the api of Hugging face from [another project](https://huggingface.co/spaces/ThomasSimonini/Roblox-3D-Assets-Generator-v1) so that I can use an A100 for free for the demo. 
 
-- Three models (Baseline, EfficientAD, FOMO AD)
-- A web app
-    - Efficient AD model using Sagemaker serverless endpoint
-    - FOMO AD model using your browser as real-time inference from Edge Impulse
-- An API for the serverless inference endpoint
-- Automatic deployment with AWS using Terraform
+I could have used the assets generation API from Stability.ai but the only thing I have to pay here is the 2D image generation. 
 
-## FOLDER STRUCTURE
+I was short on time so I focused my attention to deliver it in a day. I'm happy to do some modification.
 
-- [`.github`](.github/) code related to the [deployment](#website-deployment) of the website after a git push
-- [`ai`](ai/) Code related to the model's development
-- [`api`](api/) Code the inference API
-- [`infrastructure`](infrastructure/) Code related the automated infrastructure
-- [`website`](website/) Code related to the web app
-
-### WEBSITE DEPLOYMENT
-
-- Deploy the website after a git push **IF** the commit message contains the text: "deploy:website" within the commit message
-
-    - branch dev to deploy to dev.assets.parf.ai
-    - branch prod to deploy to assets.parf.ai
+If you want to check a project related to MLOps, I recommend [this anomaly detection project](https://github.com/emergy-official/anomaly.parf.ai) alongside [an article](https://docs.edgeimpulse.com/experts/featured-machine-learning-projects/fomo-ad-in-aws) I wrote for Edge Impulse.
