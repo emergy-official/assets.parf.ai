@@ -1,10 +1,4 @@
-import {
-  SageMakerRuntimeClient,
-  InvokeEndpointCommand,
-} from "@aws-sdk/client-sagemaker-runtime";
 import fs from "fs";
-// import { handler as rmBackgroundHandler } from "./removeBackground";
-// import { handler as createMeshHandler } from "./createMesh";
 import { createWriteStream } from "fs";
 import axios from "axios";
 import FormData from "form-data";
@@ -13,8 +7,6 @@ import FormData from "form-data";
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
 export AWS_REGION=us-east-1
-export INFERANCE_NAME=anomaly-api
-export INFERANCE_URL=https://runtime.sagemaker.us-east-1.amazonaws.com/endpoints/anomaly-api
 */
 
 async function saveObjFile(url: string, filePath: string): Promise<void> {
@@ -42,7 +34,6 @@ const saveBase64Image = async ({
 
   await fs.promises.writeFile(outputPath, buffer);
 };
-const runtimeClient = new SageMakerRuntimeClient({ region: "us-east-1" });
 
 // const removeBackground = async () => {
 //   try {

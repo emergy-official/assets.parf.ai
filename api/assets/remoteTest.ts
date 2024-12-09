@@ -1,4 +1,3 @@
-import { SageMakerRuntimeClient } from "@aws-sdk/client-sagemaker-runtime";
 import fs from "fs";
 import { createWriteStream } from "fs";
 import axios from "axios";
@@ -35,7 +34,6 @@ const saveBase64Image = async ({
 
   await fs.promises.writeFile(outputPath, buffer);
 };
-const runtimeClient = new SageMakerRuntimeClient({ region: "us-east-1" });
 
 const removeBackground = async () => {
   try {
@@ -93,18 +91,17 @@ const generateImage = async () => {
       }
     );
 
-    console.log(response)
+    console.log(response);
 
     saveBase64Image({
       base64String: response?.data?.base64,
       outputPath: "genImage.png",
     });
-
   } catch (error) {
     console.error(error);
   }
 };
-generateImage()
+generateImage();
 // removeBackground();
 // createMesh();
 // createObj();
